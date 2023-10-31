@@ -57,7 +57,7 @@ class TestVarasto(unittest.TestCase):
     
     def test_negatiivinen_ottaminen_ei_toimi(self):
         otto = self.varasto.ota_varastosta(-1)
-        self.assertAlmostEqual(otto, 1)
+        self.assertAlmostEqual(otto, 0)
 
     def test_yli_kaiken_ottaminen_vie_kaiken_varastosta(self):
         saldo = self.varasto.saldo
